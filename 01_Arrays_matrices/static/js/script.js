@@ -69,3 +69,21 @@ function matrizModificada() {
     tablero[2][2] = 1;
     alert(tablero)
 }
+
+
+function DoctorMedico() {
+    let pacientes = ["Ana", " Betto"];
+    pacientes.push("carlos", "diana");
+    pacientes.shift();
+    pacientes.unshift("sonia");
+    alert(`quedan ${pacientes.length} y el siguiente es${pacientes[1]}`);
+}
+
+
+function ExtraccionProfunda() {
+    let caja = [
+        ["frutas", "verduras"],
+        [["manzana", "pera"], ["tomate", "lechuga"]]
+    ];
+    alert(`En la canasta hay ${caja[1][0][1]} y ${caja[1][1][1]}.`)
+}
